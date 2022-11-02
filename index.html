@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./skeleton/normalize.css">
+    <link rel="stylesheet" href="./skeleton/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Rehber Uygulaması</h1>
+        <div class="hide bilgi bilgi--success">Başarılı</div>
+        <div class="hide bilgi bilgi--error">Başarısız</div>
+
+        <form action="" class="form-rehber">
+            <div>
+                <label for="ad">Adı</label>
+                <input class="u-full-width" type="text" id="ad">
+            </div>
+            <div>
+                <label for="soyad">Soyadı</label>
+                <input class="u-full-width" type="text" id="soyad">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="u-full-width" type="text" id="email">
+            </div>
+            <div>
+                <input class="u-full-width button-primary" type="submit" value="Kaydet">
+            </div>
+        </form>
+
+        <hr>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Adı</th>
+                    <th>Soyadı</th>
+                    <th>Email</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>Burak</td>
+                    <td>Ekinci</td>
+                    <td>bltycxkk@gmail.com</td>
+                    <td>
+                        <i class="btn btn--edit fa-solid fa-pen-to-square"></i>
+                        <i class="btn btn--delete fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
